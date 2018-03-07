@@ -1,3 +1,9 @@
+# WebStorm
+.idea
+
+# C++ addon
+build
+
 # Logs
 logs
 *.log

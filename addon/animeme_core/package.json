@@ -1,0 +1,15 @@
+{
+  "name": "animeme_core",
+  "version": "1.0.0",
+  "description": "Animeme core c++ addon",
+  "main": "binding.js",
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "author": "ShinCurry",
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "~1.2.1",
+    "nan": "^2.9.2"
+  }
+}
