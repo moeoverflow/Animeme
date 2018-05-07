@@ -1,39 +1,37 @@
 <template>
   <div id="player">
-    <div class="container">
+    <div class="has-vertically-aligned-content">
       <display-screen></display-screen>
     </div>
-    <div class="container">
-      <progress-bar></progress-bar>
-    </div>
-    <div class="container">
-      <play-controller></play-controller>
-    </div>
+    <hover-toolbar></hover-toolbar>
   </div>
 </template>
 
 <script>
   import DisplayScreen from './DisplayScreen'
-  import ProgressBar from './ProgressBar'
-  import PlayController from './PlayController'
+  import HoverToolbar from './HoverToolbar'
 
   export default {
     name: 'player',
     components: {
       DisplayScreen,
-      ProgressBar,
-      PlayController
+      HoverToolbar
     },
     methods: {}
   }
 </script>
 
-<style>
+<style scoped lang="scss">
   #player {
-    padding: 12px 0 12px 12px;
+    height: 100%;
+    display: flex;
+    position: relative;
   }
 
-  .container {
-    margin: 8px 0;
+  /* make content vertically aligned */
+  .has-vertically-aligned-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 </style>

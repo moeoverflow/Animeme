@@ -14,8 +14,8 @@
   }
 </script>
 
-<style>
-  #display-screen {
+<style scoped>
+  video {
     width: 100%;
   }
 </style>

@@ -1,38 +1,45 @@
 <template>
-  <div class="columns" id="wrapper">
+  <div class="columns is-gapless is-flex-tablet" id="wrapper">
     <div class="column is-9 player-area">
       <player></player>
     </div>
-      <div class="column is-3 control-area">
-        control area
+      <div class="column is-3 panel-area">
+        <panel></panel>
       </div>
   </div>
 </template>
 
 <script>
   import Player from './Player/Player'
+  import Panel from './Panels/Panel'
 
   export default {
     name: 'main-window',
     components: {
-      Player
+      Player,
+      Panel
     },
     methods: {}
   }
 </script>
 
-<style>
-  @import "~bulma/css/bulma.css";
+<style lang="scss">
+  @import "~bulma/sass/utilities/_all";
+  @import "~bulma/sass/grid/columns";
 
+  body {
+    margin: 0;
+    background-color: #313131;
+  }
   #wrapper {
     height: 100vh;
   }
   
-
   .player-area {
-    background-color: cadetblue;
+    background-color: #202020;
   }
-  .control-area {
-    background-color: chocolate;
+
+  .panel-area {
+    background-color: #313131;
   }
 </style>
