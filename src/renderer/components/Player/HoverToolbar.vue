@@ -8,10 +8,10 @@
         <i class="fas fa-compress"></i>
       </span>
       <span class="button is-primary is-inverted is-borderless">
-        <i class="fas fa-minus"></i>
+        <i class="fas fa-search-minus"></i>
       </span>
       <span class="button is-primary is-inverted is-borderless">
-        <i class="fas fa-plus"></i>
+        <i class="fas fa-search-plus"></i>
       </span>
     </div>
   </div>
@@ -20,13 +20,13 @@
 <script>
   import fontawesome from '@fortawesome/fontawesome'
   import faPlay from '@fortawesome/fontawesome-free-solid/faPlay'
-  import faPlus from '@fortawesome/fontawesome-free-solid/faPlus'
-  import faMinus from '@fortawesome/fontawesome-free-solid/faMinus'
+  import faSearchPlus from '@fortawesome/fontawesome-free-solid/faSearchPlus'
+  import faSearchMinus from '@fortawesome/fontawesome-free-solid/faSearchMinus'
   import faCompress from '@fortawesome/fontawesome-free-solid/faCompress'
 
   fontawesome.library.add(faPlay)
-  fontawesome.library.add(faPlus)
-  fontawesome.library.add(faMinus)
+  fontawesome.library.add(faSearchPlus)
+  fontawesome.library.add(faSearchMinus)
   fontawesome.library.add(faCompress)
 
   export default {

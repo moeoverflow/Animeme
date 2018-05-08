@@ -1,33 +1,31 @@
 <template>
   <div id="panel">
     <div class="container">
-      <div class="title">
-        <img id="logo" src="~@/assets/logo.png" alt="animeme-app">
-      </div>
-
       <div class="buttons has-addons is-centered is-marginless switch-area">
-        <a class="button is-medium is-primary is-inverted is-outlined is-marginless">
+        <a class="button is-medium is-primary is-inverted is-outlined is-fullwidth">
           <span class="icon is-medium">
             <i class="fas fa-crop"></i>
           </span>
-          <span>Crop</span>
-        </a>
-        <a class="button is-medium is-primary is-inverted is-outlined is-marginless">
-          <span class="icon is-medium">
-            <i class="fas fa-arrows-alt-v"></i>
-          </span>
-          <span>Resize</span>
+          <span>Crop and rotate</span>
         </a>
       </div>
 
-      <div class="buttons has-addons is-centered is-marginless switch-area">
-        <a class="button is-medium is-primary is-inverted is-outlined is-fullwidth">
+      <div class="buttons has-addons is-marginless switch-area">
+        <a class="button is-medium is-primary is-inverted is-outlined is-marginless">
           <span class="icon is-medium">
             <i class="fas fa-magic"></i>
           </span>
           <span>Magic</span>
         </a>
+        <a class="button is-medium is-primary is-inverted is-outlined is-marginless">
+          <span class="icon is-medium">
+            <i class="fas fa-question-circle"></i>
+          </span>
+          <span>Other</span>
+        </a>
       </div>
+
+      
     </div>
   </div>
 </template>
@@ -35,11 +33,11 @@
 <script>
   import fontawesome from '@fortawesome/fontawesome'
   import faCrop from '@fortawesome/fontawesome-free-solid/faCrop'
-  import faArrowsAltV from '@fortawesome/fontawesome-free-solid/faArrowsAltV'
+  import faQuestionCircle from '@fortawesome/fontawesome-free-solid/faQuestionCircle'
   import faMagic from '@fortawesome/fontawesome-free-solid/faMagic'
 
   fontawesome.library.add(faCrop)
-  fontawesome.library.add(faArrowsAltV)
+  fontawesome.library.add(faQuestionCircle)
   fontawesome.library.add(faMagic)
 
   export default {
@@ -63,6 +61,7 @@
   .buttons {
     .button {
       flex: 1;
+      height: 60px;
     }
   }
 

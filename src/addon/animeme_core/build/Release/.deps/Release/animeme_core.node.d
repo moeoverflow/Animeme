@@ -1,1 +1,0 @@
-cmd_Release/animeme_core.node := c++ -bundle -undefined dynamic_lookup -Wl,-no_pie -Wl,-search_paths_first -mmacosx-version-min=10.7 -arch x86_64 -L./Release -stdlib=libc++  -o Release/animeme_core.node Release/obj.target/animeme_core/src/binding.o 
